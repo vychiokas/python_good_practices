@@ -93,7 +93,7 @@ Or even check what would have been changed:
 python -m black --diff <filename>
 ```
 
-
+if for some reason you wish to not format a certain line you can add a comment: `#fmt: off/on`
 ## Additional links:
 
 [automatically use black with Vscode](https://dev.to/adamlombard/how-to-use-the-black-python-code-formatter-in-vscode-3lo0)
