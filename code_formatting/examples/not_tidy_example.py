@@ -1,18 +1,15 @@
 from typing import Dict
+from random import randbytes, randint,random, randrange, Random, SystemRandom, sample,shuffle
+def my_function(parameter1:str,parameter2:int,parameter3:Dict[str, str], parameter4:str, parameter5:str) -> None:
+    print(parameter1, parameter2, parameter3, parameter4, parameter5)
 
 
-def my_function(parameter1: str, parameter2: int, parameter3: Dict[str, str]) -> None:
-    print(parameter1, parameter2, parameter3)
+my_dictionary = {"name":"value","another name":"another value"}
 
-
-my_dictionary = {"name": "value", "another name": "another value"}
-
-
-
-def is_unique( 
+def is_unique(
                s
                ):
-    s = list(s 
+    s = list(s
                 )
     s.sort()
  
@@ -22,7 +19,7 @@ def is_unique(
             return 0
     else:
         return 1
-#fmt: off
+# fmt: off
 def my_function2(df, operator_clasificator, phone_number_col_name, temp_country_code_col_name, new_operator_col_name, F) -> None:
     df = (
         df.alias("left")
@@ -32,11 +29,20 @@ def my_function2(df, operator_clasificator, phone_number_col_name, temp_country_
             how="left_outer")
         .select("left.*", F.col("right.operator_name").alias(new_operator_col_name))
     )
-#fmt: on
+# fmt: on
+
+
+def my_function3(paramater1:str,
+        parameter2: str) -> str:
+    return (((paramater1 + parameter2)))
+
+
+def my_function4():
+    pass
+
+
 if __name__ == "__main__":
-    print(
+        print(
           is_unique(input())
          )
-
-
 
