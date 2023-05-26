@@ -1,14 +1,23 @@
 # PEP8
 
+## What is PEP8
+PEP 8 is a set of guidelines for writing Python code that aims to improve the readability and maintainability of your code. Following PEP 8 can make your code more consistent and easier to understand for yourself and others who may need to read or modify it in the future.
+
+
 As any programming language has naming standards and standards for the ways it does certain things - Python is not an exception. With the naming standards we communicate better with other developers on what certain things must be and what they should not. It was written in 2001 by Guido van Rossum, Barry Warsaw, and Nick Coghlan. The primary focus of PEP 8 is to improve the readability and consistency of Python code.
 
 PEP stands for Python Enhancement Proposal, and there are several of them. A PEP is a document that describes new features proposed for Python and documents aspects of Python, like design and style, for the community.
 
-Why do we need it, simply as the [Zen of Python](https://peps.python.org/pep-0020/#the-zen-of-python) states: Readability counts. There are many benefits of standardizing the way people write code:
-1. If you follow a certain standard it is easier for others to understand your code and the other way around.
-1. Improved code readability.
-1. Makes code clean.
 
+## Why is PEP8 Important  
+Simply as the [Zen of Python](https://peps.python.org/pep-0020/#the-zen-of-python) states: Readability counts. There are many benefits of standardizing the way people write code:
+1. Readability: Code that follows PEP 8 guidelines is easier to read and understand, which makes it easier to maintain and modify in the future.
+
+1. Consistency: Following PEP 8 helps to ensure that your code is consistent with other Python code that follows the same guidelines, making it easier for others to understand and collaborate with.
+
+1. Compatibility: Code that follows PEP 8 guidelines is more likely to be compatible with various tools and libraries that are designed to work with Python code.
+
+1. Best practices: PEP 8 guidelines are based on best practices for writing Python code, which means following them can help you write better, more efficient code.
 These all sound like synonyms and of course they are, but let's see a few examples where the naming standards .
 
 **NOTE** :
@@ -77,7 +86,7 @@ def get_pending_pull_requests(self):
 
 Sometimes it ain't that easy to come up with good variable naming and thus many jokes are written about it:
 
-![IMG](https://github.com/CodeAcademy-Online/python-new-material-level2/blob/master/images/searching_meaningful_variable_name.png)
+![IMG](/pictures/variable_name.png)
 
 Why is this important? Readability.
 
@@ -155,14 +164,14 @@ Surround the following binary operators with a single space on either side:
 * Comparisons (==, !=, >, <. >=, <=) and (is, is not, in, not in)
 * Booleans (and, not, or) 
 
-Do not do this
+BAD:
 ```python
 a=5
 something=5>4
 name="John"
 ```
 
-Do this
+GOOD:
 ```python
 a = 5
 something = 5 > 4
@@ -171,3 +180,25 @@ name = "John"
 
 
 In conclusion there are plenty of rules it might be a bit overwhelming to start writing python code as it should be written if one was not used to do it. But there are plenty of tools that can help you: linters, formatters etc. We will review them in other topics.
+
+
+## Avoid magic constants/ hardcoding at all costs
+
+In programming, a magic constant is a value that is hard-coded into the program and is not defined by a named constant or variable. Magic constants are considered bad practice because they make the code difficult to read and maintain.
+
+BAD: 
+
+```python
+def calculate_area(radius):
+    return 3.14159 * radius * radius
+
+```
+
+GOOD:
+```python
+PI = 3.14159
+
+def calculate_area(radius):
+    return PI * radius * radius
+
+```
