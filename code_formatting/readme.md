@@ -1,5 +1,6 @@
 # Code formatting
 
+**Robert C. Martin, that says that code is read ten times more than it's written**
 
 1. Readability: Proper formatting makes code easier to read and understand. When code is well-formatted, it is easier to identify different parts of the code, such as functions, loops, and conditionals. This is especially important when working on larger projects or when collaborating with other developers.
 
