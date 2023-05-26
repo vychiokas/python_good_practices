@@ -32,7 +32,7 @@ def my_function2(df, operator_clasificator, phone_number_col_name, temp_country_
 # fmt: on
 
 
-def my_function3(paramater1:str,
+def my_function3  (paramater1:str,
         parameter2: str) -> str:
     return (((paramater1 + parameter2)))
 
