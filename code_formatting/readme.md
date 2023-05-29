@@ -28,6 +28,9 @@ Each of these code formatters has its own strengths and weaknesses, so it's impo
 
 
 ## Black
+Black project github [page](https://github.com/psf/black)  
+The following organizations use Black: Facebook, Dropbox, KeepTruckin, Mozilla, Quora, Duolingo, QuantumBlack, Tesla, Archer Aviation.
+
 
 1. Consistency: Black enforces a strict and consistent code style across your entire codebase, which helps to reduce inconsistencies and makes it easier to read and maintain the code.
 
@@ -92,6 +95,11 @@ Or even check what would have been changed:
 ```bash
 python -m black --diff <filename>
 ```
+
+## pre-commit
+
+There is also a possibility to easily automate this stuff with [pre-commit](https://github.com/pre-commit/pre-commit): [instructions](https://medium.com/gousto-engineering-techbrunch/automate-python-code-formatting-with-black-and-pre-commit-ebc69dcc5e03)
+
 
 if for some reason you wish to not format a certain line you can add a comment: `#fmt: off/on`
 ## Additional links:
