@@ -10,7 +10,9 @@
 
 1. Community Standards: There are widely accepted standards for formatting Python code, such as PEP 8, which is the official Python style guide. Following these standards makes your code more understandable to other developers who may be working on your project or who may be using your code as a library.
 
-Overall, code formatting is important in Python because it helps to ensure that your code is readable, maintainable, and consistent with community standards.
+Overall, code formatting is important in Python because it helps to ensure that your code is readable, maintainable, and consistent with community standards. 
+
+**Also improves your as a developers experience coding as you do not have to think about how to structure your code tidily**
 
 ## Popular code formatters
 
@@ -98,7 +100,8 @@ python -m black --diff <filename>
 
 ## pre-commit
 
-There is also a possibility to easily automate this stuff with [pre-commit](https://github.com/pre-commit/pre-commit): [instructions](https://medium.com/gousto-engineering-techbrunch/automate-python-code-formatting-with-black-and-pre-commit-ebc69dcc5e03)
+There is also a possibility to easily automate this stuff with [pre-commit](https://github.com/pre-commit/pre-commit): [instructions](https://medium.com/gousto-engineering-techbrunch/automate-python-code-formatting-with-black-and-pre-commit-ebc69dcc5e03)  
+This will simply before each commit check if you code is black compatible if not - it will fix it for you.
 
 
 if for some reason you wish to not format a certain line you can add a comment: `#fmt: off/on`

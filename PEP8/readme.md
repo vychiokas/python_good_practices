@@ -73,8 +73,8 @@ We did some simple alterations here. We renamed some variables, found a good nam
 
 
 ```python
-def get_pending_pull_requests(self):
-    pending_pull_requests: list[PullRequest] = []
+def get_pending_pull_requests(self) -> List[PullRequest]:
+    pending_pull_requests: List[PullRequest] = []
     for pull_request in self.embarked_pull_requests:
         if pull_request.is_pending:
              pending_pull_requests.append(pull_request)
@@ -198,7 +198,7 @@ GOOD:
 ```python
 PI = 3.14159
 
-def calculate_area(radius):
+def calculate_area(radius: float) -> float:
     return PI * radius * radius
 
 ```
